@@ -1,0 +1,15 @@
+# Node / Firebase local development
+node_modules/
+functions/node_modules/
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Local credentials and environment files: never commit these
+.env
+.env.*
+!.env.example
+service-account*.json
+*-service-account*.json
+firebase-adminsdk-*.json

@@ -18,16 +18,17 @@
     .education{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.edu{padding:20px;border-radius:17px;background:#f1f8f6;border:1px solid var(--line)}.edu b{display:block;margin-bottom:5px}.edu span{font-size:13px;color:var(--muted)}
     .hours{background:var(--deep);color:white}.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.hours h2{font-size:38px;line-height:1.15;margin:0 0 12px}.hours p{color:#d2e9e4}.hours-box{background:#ffffff14;border:1px solid #ffffff30;border-radius:20px;padding:24px}.hours-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #ffffff25}.hours-row:last-child{border:0}.closed{color:#ffdfaa}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{padding:27px;border:1px solid var(--line);border-radius:20px;background:white}.contact-card h3{margin-top:0}.contact-item{padding:12px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border:0}.contact-item small{display:block;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.7px}.map{width:100%;height:100%;min-height:290px;border:0;border-radius:20px;background:var(--mint)}.notice{font-size:12px;color:var(--muted);margin-top:16px}
+    .portal{background:#f1f8f6}.portal-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:start}.portal-card{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 24px #163d3610}.portal-card h3{margin:0 0 14px}.portal-tabs{display:flex;gap:8px;margin-bottom:18px}.portal-tabs button{border:1px solid var(--line);background:#f8fcfb;color:#45615d;border-radius:12px;padding:10px 14px;font:inherit;font-weight:750;cursor:pointer}.portal-tabs button[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:white}.form-stack{display:grid;gap:13px}.form-stack label{display:grid;gap:6px;font-size:13px;font-weight:750;color:#45615d}.form-stack input,.form-stack select{width:100%;padding:12px;border:1px solid #bfd4cf;border-radius:11px;background:white;color:var(--ink);font:inherit}.form-stack input:focus,.form-stack select:focus{outline:3px solid #087f7226;border-color:var(--teal)}.form-stack .check-row{display:flex;align-items:flex-start;gap:10px;font-weight:500}.form-stack .check-row input{width:auto;margin-top:5px}.portal .btn{font:inherit}.portal .btn:disabled{opacity:.6;cursor:wait}.portal-link{background:none;border:0;padding:8px 0;color:var(--teal);font:inherit;font-weight:700;text-decoration:underline;cursor:pointer}.portal-note{font-size:13px;color:var(--muted)}.portal-alert,.portal-status{border-radius:14px;padding:13px 16px;margin:0 0 18px;background:#e8f6f3;color:#075b55;font-size:14px}.portal-alert{border:1px solid #b9d8d1}.portal-status:empty{display:none}.portal-status[data-kind="error"]{background:#fff0ed;color:#8b2e1d}.portal-status[data-kind="success"]{background:#e8f6f3;color:#075b55}.dashboard-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}.dashboard-head p{margin:3px 0 0;color:var(--muted);font-size:13px}.appointment-list{display:grid;gap:12px;margin-top:14px}.appointment-item{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fbfefd}.appointment-item strong{display:block}.appointment-item p{margin:5px 0;color:var(--muted);font-size:13px}.appointment-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.status-pill{display:inline-flex;background:#e8f6f3;color:#075b55;padding:4px 9px;border-radius:99px;font-size:11px;font-weight:800;text-transform:capitalize}.appointment-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}.appointment-actions select{padding:8px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);font:inherit}.appointment-empty{color:var(--muted);font-size:14px;padding:12px 0}.invite-link-box{overflow-wrap:anywhere;background:#f1f8f6;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px;font-size:13px}.invite-link-box a{color:var(--teal);font-weight:700;text-decoration:underline}[hidden]{display:none!important}
     footer{background:#123b37;color:#d5e9e5;padding:28px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:white}
-    @media(max-width:800px){nav{display:none}.hero{padding:55px 0}.hero-grid,.about-grid,.hours-grid,.contact-grid{grid-template-columns:1fr}.visual{min-height:310px}.cards{grid-template-columns:1fr 1fr}.education{grid-template-columns:1fr 1fr}.about-grid{gap:25px}}
+    @media(max-width:800px){nav{display:none}.hero{padding:55px 0}.hero-grid,.about-grid,.hours-grid,.contact-grid,.portal-layout{grid-template-columns:1fr}.visual{min-height:310px}.cards{grid-template-columns:1fr 1fr}.education{grid-template-columns:1fr 1fr}.about-grid{gap:25px}}
     @media(max-width:520px){.cards{grid-template-columns:1fr}.education{grid-template-columns:1fr 1fr}.nav{height:66px}.navbtn{padding:10px 13px;font-size:12px}.brand{font-size:14px}.brand small{font-size:9px}.hero h1{letter-spacing:-1.5px}.actions .btn{width:100%}.foot{display:block}.foot div+div{margin-top:10px}}
   </style>
 </head>
 <body>
 <header><div class="wrap nav">
   <a class="brand" href="#home"><span class="mark">+</span><span>CITY SUGAR CLINIC<small>TUMKUR · KARNATAKA</small></span></a>
-  <nav><a href="#services">Services</a><a href="#doctor">About Doctor</a><a href="#learn">Diabetes Education</a><a href="#contact">Contact</a></nav>
-  <a class="navbtn" href="#contact">Contact clinic</a>
+  <nav><a href="#services">Services</a><a href="#doctor">About Doctor</a><a href="#learn">Diabetes Education</a><a href="#portal">Patient portal</a><a href="#contact">Contact</a></nav>
+  <a class="navbtn" href="#portal">Patient portal</a>
 </div></header>
 <main>
   <section class="hero" id="home"><div class="wrap hero-grid">
@@ -60,6 +61,62 @@
   <section class="hours"><div class="wrap hours-grid"><div><span class="eyebrow">Plan your visit</span><h2>We’re here for your health.</h2><p>Visit City Sugar Clinic during our consultation hours. For appointments and enquiries, please contact the clinic using the details provided by the clinic team.</p></div>
     <div class="hours-box"><h3>Clinic timings</h3><div class="hours-row"><span>Monday – Saturday</span><strong>5 PM – 10 PM</strong></div><div class="hours-row"><span>Sunday</span><strong class="closed">Closed</strong></div></div>
   </div></section>
+  <section class="portal" id="portal"><div class="wrap">
+    <div class="section-head"><span class="eyebrow">Patient portal</span><h2>Appointments and account access</h2><p>Citizens can create an account and request a clinic appointment. Doctor access is provided by the clinic administrator.</p></div>
+    <div class="portal-alert" id="setupNotice" role="status" hidden>Portal setup is incomplete. The clinic must connect its Firebase project before accounts and appointments can be used.</div>
+    <div class="portal-status" id="portalStatus" role="status" aria-live="polite"></div>
+    <div class="portal-layout">
+      <div class="portal-card" id="authPanel">
+        <div class="portal-tabs" role="tablist" aria-label="Account access">
+          <button type="button" role="tab" aria-controls="signInForm" data-auth-view="signin" aria-selected="true">Sign in</button>
+          <button type="button" role="tab" aria-controls="signUpForm" data-auth-view="signup" aria-selected="false">Citizen sign up</button>
+        </div>
+        <p class="portal-note" id="authHint">Sign in with the email address and password for your clinic account.</p>
+        <form id="signInForm" class="form-stack">
+          <label for="signInEmail">Email address<input id="signInEmail" name="email" type="email" autocomplete="username" required></label>
+          <label for="signInPassword">Password<input id="signInPassword" name="password" type="password" autocomplete="current-password" required></label>
+          <button class="btn" type="submit">Sign in</button>
+          <button class="portal-link" type="button" id="resetPassword">Forgot password?</button>
+        </form>
+        <form id="signUpForm" class="form-stack" hidden>
+          <label for="signUpName">Full name<input id="signUpName" name="name" type="text" minlength="2" maxlength="80" autocomplete="name" required></label>
+          <label for="signUpEmail">Email address<input id="signUpEmail" name="email" type="email" autocomplete="email" required></label>
+          <label for="signUpPhone">Phone number<input id="signUpPhone" name="phone" type="tel" maxlength="20" autocomplete="tel" required></label>
+          <label for="signUpPassword">Password<input id="signUpPassword" name="password" type="password" minlength="8" autocomplete="new-password" required></label>
+          <label for="confirmPassword">Confirm password<input id="confirmPassword" name="confirmPassword" type="password" minlength="8" autocomplete="new-password" required></label>
+          <label class="check-row" for="portalAcknowledgement"><input id="portalAcknowledgement" type="checkbox" required><span>I agree the clinic may use my name, email, phone, and appointment details to manage my account and respond to requests. I will not enter medical records or urgent symptoms.</span></label>
+          <button class="btn" type="submit">Create citizen account</button>
+          <p class="portal-note">A verification email is required before submitting an appointment request.</p>
+        </form>
+      </div>
+      <div class="portal-card" id="dashboardPanel" hidden>
+        <div class="dashboard-head"><div><h3>Clinic portal</h3><p id="userIdentity"></p></div><button class="btn secondary" id="signOutButton" type="button">Sign out</button></div>
+        <div class="portal-alert" id="verificationNotice" hidden><p>Please verify your email before using appointment services.</p><div class="appointment-actions"><button class="btn" id="resendVerification" type="button">Resend verification email</button><button class="portal-link" id="refreshVerification" type="button">I’ve verified—refresh</button></div></div>
+        <div id="citizenPanel" hidden>
+          <h3>Request an appointment</h3>
+          <p class="portal-note">Share only contact and scheduling details here. Do not enter diagnoses, test results, prescriptions, or other medical records. A request is not confirmed until the clinic contacts you.</p>
+          <form id="appointmentForm" class="form-stack">
+            <label for="appointmentPhone">Contact phone<input id="appointmentPhone" name="phone" type="tel" maxlength="20" autocomplete="tel" required></label>
+            <label for="appointmentDate">Preferred date<input id="appointmentDate" name="date" type="date" required></label>
+            <label for="appointmentTime">Preferred time<select id="appointmentTime" name="time" required><option value="" disabled selected>Select a time</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label>
+            <button class="btn" type="submit">Send appointment request</button>
+          </form>
+          <h3 style="margin-top:28px">Your requests</h3><div class="appointment-list" id="ownAppointments" aria-live="polite"></div>
+        </div>
+        <div id="staffPanel" hidden><h3>Appointment queue</h3><p class="portal-note">Requests include only appointment scheduling and contact details.</p><div class="appointment-list" id="staffAppointments" aria-live="polite"></div></div>
+        <div id="adminPanel" hidden>
+          <h3>Invite a doctor</h3>
+          <p class="portal-note">Doctor accounts are created by an administrator. The setup link is sensitive; send it privately to the invited doctor.</p>
+          <form id="inviteDoctorForm" class="form-stack">
+            <label for="doctorName">Doctor name<input id="doctorName" name="name" type="text" maxlength="80" required></label>
+            <label for="doctorEmail">Doctor email<input id="doctorEmail" name="email" type="email" autocomplete="email" required></label>
+            <button class="btn" type="submit">Create doctor invitation</button>
+          </form>
+          <div class="invite-link-box" id="inviteResult" hidden><p id="inviteMessage"></p><a id="inviteLink" href="#" rel="noopener" target="_blank">Open password setup link</a><div class="appointment-actions"><button class="btn secondary" id="copyInviteLink" type="button">Copy invitation link</button></div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
   <section id="contact"><div class="wrap"><div class="section-head"><span class="eyebrow">Find us</span><h2>Visit City Sugar Clinic</h2><p>We look forward to helping you take care of your health.</p></div>
     <div class="contact-grid"><div class="contact-card"><h3>Contact & location</h3>
       <div class="contact-item"><small>Clinic address</small>SS Puram, near Gopalaswamy Temple,<br>opposite Apollo Pharmacy, Tumkur, Karnataka.</div>
@@ -74,4 +131,5 @@
 </main>
 <footer><div class="wrap foot"><div><strong>CITY SUGAR CLINIC</strong><br>Better Diabetes Care. Better Living.</div><div>SS Puram, Tumkur, Karnataka · Mon–Sat, 5 PM–10 PM</div><div>© <span id="year"></span> City Sugar Clinic</div></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script type="module" src="./portal.js"></script>
 </body></html>
